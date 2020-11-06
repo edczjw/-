@@ -1,0 +1,68 @@
+{ 
+	"easycom": {
+        // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+        // 下载安装方式
+        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+        // npm安装方式
+        // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏 
+			}
+		},{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏 
+			}
+		},{
+			"path": "pages/MinePage/MinePage",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏 
+			}
+		},{
+			"path": "pages/allKill/allKill",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏 
+			}
+		},{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏 
+			}
+		}
+	],
+	"tabBar": {
+	  "color": "#000",
+	  "selectedColor": "#2af010",
+	  "backgroundColor": "#fafafa",
+	  "position":"bottom",
+	  "borderStyle": "black",
+	  "list": [{
+	    "pagePath": "pages/index/index",
+	    "text": "主页",
+	    "iconPath": "static/Image/home.png",
+	    "selectedIconPath": "static/Image/home-o.png"
+	  },
+	  // {
+	  //   "pagePath": "pages/allKill/allKill",
+	  //   "text": "功能",
+	  //   "iconPath": "static/Image/category.png",
+	  //   "selectedIconPath": "static/Image/category-o.png"
+	  // },
+	  {
+	    "pagePath": "pages/MinePage/MinePage",
+	    "text": "个人中心",
+	    "iconPath": "static/Image/my.png",
+	    "selectedIconPath": "static/Image/my-o.png"
+	  }]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "家用宝",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
